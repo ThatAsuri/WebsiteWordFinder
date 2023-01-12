@@ -1,4 +1,4 @@
-# WebsiteWordFinder
+# Word Finder on websites
 This script allows you to find if certain words are present on a website or any website it directly refers to.
 
 ## Required python modules
