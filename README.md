@@ -8,8 +8,7 @@ This script requires the following python modules:
 
 ## Usage
 The script requires the file meanwords.txt to be in the same catalog.
-Just launch the python script like this:
-./python MeanWords.py
-Then give it the address of a website you want to check eg. "https://www.wp.pl".
-The script will list all the words, word count and the websites it found them on, line by line.
+*Just launch the python script like this: ./python MeanWords.py
+*Then give it the address of a website you want to check eg. "https://www.wp.pl".
+*The script will list all the words, word count and the websites it found them on, line by line.
 
