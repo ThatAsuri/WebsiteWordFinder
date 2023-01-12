@@ -22,11 +22,14 @@ link = requests.get(main_url)
 all_links = BeautifulSoup(link.text, "html.parser")
 
 for word in mean_words_list:
-    if word in link.text:
-        if word in counter:
-            counter[word] = counter[word] +1 
-        else:
-            counter[word] = 1
+    #if word in link.text:
+    for split_word in link.text.split():
+        #if split_word == word:
+        if re.search(r"\b" + re.escape(split_word) + r"\b", word, re.IGNORECASE)
+            if word in counter:
+                counter[word] = counter[word] +1 
+            else:
+                counter[word] = 1
 
 for httpys in all_links.find_all("a", attrs={"href": re.compile("^http")}):
     print("Detected URL:" + httpys.get("href"))
